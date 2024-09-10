@@ -1,0 +1,8 @@
+.main-container{
+    background-image: url('/assets/bgImages/416bbce5aa661793d48a44689f59a7af.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    filter: brightness(0.7);
+}
