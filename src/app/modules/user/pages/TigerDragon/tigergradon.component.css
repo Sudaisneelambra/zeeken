@@ -1,0 +1,28 @@
+/* Default styles */
+.main-container {
+    background-color: lightblue;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* Portrait (vertical) mode for mobile devices */
+  @media only screen and (max-width: 767px) and (orientation: portrait) {
+    .main-container {
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: lightcoral;
+    }
+  
+    h1 {
+      font-size: 2em;
+    }
+  
+    p {
+      font-size: 1.2em;
+    }
+  }
+  

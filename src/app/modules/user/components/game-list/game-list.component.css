@@ -7,7 +7,7 @@
 
 .main-container::-webkit-scrollbar {
     width: 2px; /* Set the width of the scrollbar */
-    height: 2px;
+    height: 0px;
   }
 
   .main-container::-webkit-scrollbar-thumb {
