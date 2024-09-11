@@ -1,0 +1,8 @@
+.nav-bar{
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+}
+
+.widthdraw-details{
+    border-radius: 6px 30px 30px 6px;
+}

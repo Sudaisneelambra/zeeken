@@ -5,6 +5,9 @@ const routes: Routes = [
   {
     path:'user',
     loadChildren:()=>import('./modules/user/user.module').then((e)=>e.UserModule)
+  },
+  {
+    path: '', redirectTo: '/user', pathMatch: 'full' 
   }
 ];
 

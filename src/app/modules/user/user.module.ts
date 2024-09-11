@@ -4,6 +4,7 @@ import { UserRoutermodule } from "./user.router.module";
 import { NavbarComponent } from "./components/navbar/navbar.component";
 import { GameListComponent } from "./components/game-list/game-list.component";
 import { DragonTiger } from "./pages/TigerDragon/tigergradon.component";
+import { GameNave } from "./components/gamenavbar/gamenavbar.component";
 
 @NgModule({
     declarations: [
@@ -14,7 +15,8 @@ import { DragonTiger } from "./pages/TigerDragon/tigergradon.component";
     imports: [
         UserRoutermodule,
         NavbarComponent,
-        GameListComponent
+        GameListComponent,
+        GameNave
     ],
     exports: [],
 })
