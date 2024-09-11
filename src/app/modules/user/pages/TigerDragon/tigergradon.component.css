@@ -5,24 +5,23 @@
     padding: 20px;
   }
   
-  /* Portrait (vertical) mode for mobile devices */
-  @media only screen and (max-width: 767px) and (orientation: portrait) {
+  @media only screen and (max-width: 550px) and (orientation: landscape) {
     .main-container {
       width: 100vw;
       height: 100vh;
       display: flex;
-      flex-direction: column;
-      justify-content: center;
+      flex-direction: row;
+      justify-content: space-around;
       align-items: center;
-      background-color: lightcoral;
+      background-color: lightgreen;
     }
   
     h1 {
-      font-size: 2em;
+      font-size: 1.5em;
     }
   
     p {
-      font-size: 1.2em;
+      font-size: 1em;
     }
   }
   
