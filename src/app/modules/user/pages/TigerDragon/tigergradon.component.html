@@ -1,7 +1,73 @@
 <!-- app.component.html -->
 <div class="main-container">
     <app-gamenav></app-gamenav>
-    <h1>Hello, this is vertical mode content!</h1>
-    <p>All the content will be displayed in portrait mode on mobile devices.</p>
+    <div class="game-container  mt-5 h-[220px] md:h-[300px] flex justify-center gap-2" >
+        <div class="dragon w-[30%] backdrop-blur-lg bg-white/10 ">
+            <h1 class="added-amount">200/3000</h1>
+            <img src="/assets/innetgameimages/dragon.png" alt="" class="w-full h-[90%]">
+        </div>
+        <div class="tie w-[20%] backdrop-blur-lg bg-white/10">
+            <h1 class="added-amount-tie">200/3000</h1>
+            <img src="/assets/innetgameimages/elaphant.png" alt="" class="w-full h-[90%]">
+        </div>
+        <div class="tiger w-[30%]  backdrop-blur-lg bg-white/10">
+            <h1 class="added-amount">200/3000</h1>
+            <img src="/assets/innetgameimages/tiger.png" alt="" class="w-full h-[90%]">
+        </div>
+    </div>
+    <div class="amout-chips-main flex justify-center items-center">
+        <div class="amount-chips  w-[80%] h-[70px] md:h-[170px] flex justify-end gap-4 items-center rounded-full">
+            <div class="one h-full flex justify-center items-center relative" 
+                (click)="selectAmount(10)"
+                >
+                <img src="/assets/coins/coin.png" alt="dd" class="h-[80%]" 
+                [ngClass]="{'active': selectedAmount === 10}"
+                >
+                <h1 class="absolute text-[white] font-[800] text-[23px] flex justify-center items-center rounded-full"
+                [ngClass]="{'clicked': selectedAmount === 10}"
+                >10</h1>
+            </div>
+            <div class="two h-full flex justify-center items-center relative"  
+                (click)="selectAmount(50)"
+                >
+                <img src="/assets/coins/coin.png" alt="dd" class="h-[80%]"
+                [ngClass]="{'active': selectedAmount === 50}"
+                >
+                <h1 class="absolute text-[white] font-[800] text-[23px] flex justify-center items-center rounded-full"
+                [ngClass]="{'clicked': selectedAmount === 50}"
+                >50</h1>
+            </div>
+            <div class="three h-full flex justify-center items-center relative" 
+                (click)="selectAmount(100)"
+                >
+                <img src="/assets/coins/coin.png" alt="dd" class="h-[80%]" 
+                [ngClass]="{'active': selectedAmount === 100}"
+                >
+                <h1 class="absolute text-[white] font-[800] text-[21px] flex justify-center items-center rounded-full"
+                [ngClass]="{'clicked': selectedAmount === 100}"
+                >100</h1>
+            </div>
+            <div class="four h-full flex justify-center items-center relative"
+                (click)="selectAmount(500)"
+                >
+                <img src="/assets/coins/coin.png" alt="dd" class="h-[80%]" 
+                [ngClass]="{'active': selectedAmount === 500}"
+                >
+                <h1 class="absolute text-[white] font-[800] text-[20px] flex justify-center items-center rounded-full"
+                [ngClass]="{'clicked': selectedAmount === 500}"
+                >500</h1>
+            </div>
+            <div class="five h-full flex justify-center items-center relative" 
+                (click)="selectAmount(1000)"
+                >
+                <img src="/assets/coins/coin.png" alt="dd" class="h-[80%]" 
+                [ngClass]="{'active': selectedAmount === 1000}"
+                >
+                <h1 class="absolute text-[white] font-[800] text-[15px] flex justify-center items-center rounded-full"
+                [ngClass]="{'clicked': selectedAmount === 1000}"
+                >1000</h1>
+            </div>
+        </div>
+    </div>
 </div>
   

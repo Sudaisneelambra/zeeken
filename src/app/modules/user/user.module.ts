@@ -5,6 +5,7 @@ import { NavbarComponent } from "./components/navbar/navbar.component";
 import { GameListComponent } from "./components/game-list/game-list.component";
 import { DragonTiger } from "./pages/TigerDragon/tigergradon.component";
 import { GameNave } from "./components/gamenavbar/gamenavbar.component";
+import { CommonModule } from "@angular/common";
 
 @NgModule({
     declarations: [
@@ -13,6 +14,7 @@ import { GameNave } from "./components/gamenavbar/gamenavbar.component";
 
     ],
     imports: [
+        CommonModule,
         UserRoutermodule,
         NavbarComponent,
         GameListComponent,

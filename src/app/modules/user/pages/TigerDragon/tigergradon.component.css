@@ -1,6 +1,9 @@
 /* Default styles */
 .main-container {
-    background-color: lightblue;
+    background-image: url('/assets/bgImages/bgdragon.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     text-align: center;
   }
   
@@ -12,7 +15,6 @@
       flex-direction: row;
       justify-content: space-around;
       align-items: center;
-      background-color: lightgreen;
     }
   
     h1 {
@@ -23,4 +25,54 @@
       font-size: 1em;
     }
   }
+
+
+  .tie{
+    border-radius: 20px 20px 40px 40px;
+    filter: brightness(.8);
+    overflow: hidden;
+
+  }
+
+  .tiger{
+    border-radius: 20px 0px 0px 65px;
+    filter: brightness(.8);
+    overflow: hidden;
+
+  }
   
+  .dragon{
+    border-radius: 0px 20px 65px 0px;
+    filter: brightness(.8);
+    overflow: hidden;
+}
+    
+.added-amount{
+border-bottom: 2px solid black;
+background-color: rgba(255, 68, 0, 0.493);
+
+}
+    
+.added-amount-tie{
+border-bottom: 2px solid black;
+background-color: rgba(255, 68, 0, 0.493);
+}
+
+.amount-chips img {
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+  }
+
+  .amount-chips img.active {
+    transform: scale(1.2);
+  }
+
+  .amount-chips h1{
+    transition: transform 0.5s ease,;
+  }
+
+.amount-chips h1.clicked{
+  background-color: rgb(185, 157, 157);
+  color: rgb(13, 124, 37);
+  width: 46px;
+  height: 46px;
+}
