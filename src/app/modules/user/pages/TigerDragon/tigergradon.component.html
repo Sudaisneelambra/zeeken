@@ -2,16 +2,16 @@
 <div class="main-container">
     <app-gamenav></app-gamenav>
     <div class="game-container  mt-5 h-[200px] md:h-[300px] flex justify-center gap-2" >
-        <div class="dragon w-[30%] backdrop-blur-lg bg-white/10 ">
-            <h1 class="added-amount">200/3000</h1>
+        <div class="dragon w-[30%] backdrop-blur-lg bg-white/10 " (click)="dragonClick(selectedAmount)">
+            <h1 class="added-amount">{{dragonAmt}}/2000</h1>
             <img src="/assets/innetgameimages/dragon.png" alt="" class="w-full h-[90%]">
         </div>
-        <div class="tie w-[20%] backdrop-blur-lg bg-white/10">
-            <h1 class="added-amount-tie">200/3000</h1>
+        <div class="tie w-[20%] backdrop-blur-lg bg-white/10" (click)="tieClick(selectedAmount)">
+            <h1 class="added-amount-tie">{{tieAmt}}/2000</h1>
             <img src="/assets/innetgameimages/elaphant.png" alt="" class="w-full h-[90%]">
         </div>
-        <div class="tiger w-[30%]  backdrop-blur-lg bg-white/10">
-            <h1 class="added-amount">200/3000</h1>
+        <div class="tiger w-[30%]  backdrop-blur-lg bg-white/10" (click)="tigerClick(selectedAmount)">
+            <h1 class="added-amount">{{tigerAmt}}/2000</h1>
             <img src="/assets/innetgameimages/tiger.png" alt="" class="w-full h-[90%]">
         </div>
     </div>
